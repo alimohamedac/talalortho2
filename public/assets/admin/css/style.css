@@ -1,0 +1,595 @@
+/* this coding created by web developer/ Ahmed fawzy mohamed */
+/* personal email: ahmedfawzyalhegazy2020@gmail.com */
+/* whatsapp: +201094848584 */
+/* whatsapp: +201145476545 */
+/* website: https://orion-comp.com/ */
+/* formal email: info@orion-comp.com */
+/* linkedin account: https://www.linkedin.com/in/ahmed-fawzy-mohamed-48a771202 */
+
+/* Start Global Rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:root {
+  --gray-color: #654E4E;
+  --gold-color: #C6AD88;
+  --white: #ffffff;
+  --black: #000000;
+  --mainbg: #f9f7f3;
+  --main-transition: 0.25s;
+}
+::-webkit-scrollbar{
+  width: 8px;
+}
+::-webkit-scrollbar-track{
+  background-color: var(--gray-color);
+}
+::-webkit-scrollbar-thumb{
+  background-color: var(--gold-color);
+}
+::-webkit-scrollbar-thumb:hover{
+  background-color: var(--gold-color);
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Tajawal", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.row{
+  width: 100%;
+  margin: auto;
+}
+.maindashbtn{
+  border-radius: 5px;
+  background-color: var(--gray-color);
+  color: #fff;
+  padding: 10px 60px;
+  border: 1px solid;
+  transition: var(--main-transition);
+}
+/* media query  */
+@media (max-width: 320px) {
+  .container {
+    max-width: 300px !important; } }
+@media (min-width: 360px) {
+  .container {
+    max-width: 340px !important; } }
+@media (min-width: 410px) {
+  .container {
+    max-width: 390px !important; } }
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px !important; } }
+@media (min-width: 769px) {
+  .container {
+    max-width: 720px !important; } }
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px !important; } }
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1170px !important; } }
+/* End @media */
+
+/* End Global Rules */
+
+
+/* Start login */
+.login{
+
+}
+.login .container{
+  padding: 60px 0px;
+}
+.login .uplogo{
+  text-align: center;
+  margin-bottom: 50px;
+}
+.login .uplogo img{
+  height: 90px;
+}
+.login h3{
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+.login .upform{
+  width: 60%;
+  margin: auto;
+  padding: 30px;
+  border-radius: 7px;
+  box-shadow: 1px 1px 2px #ddd, -1px -1px 2px #ddd;
+}
+.login form{
+  
+}
+.login form > div{
+  margin-bottom: 30px;
+}
+.login form > div:last-of-type{
+  text-align: center;
+}
+.login label{
+  font-size: 14px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: var(--gray-color);
+}
+.login form input[type = text],
+.login form input[type = password]{
+  width: 100%;
+  padding: 7px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  background-color: rgba(217, 217, 217, 0.15);
+}
+.login form input[type = text]::placeholder,
+.login form input[type = password]::placeholder{
+  font-size: 15px;
+  text-align: right;
+}
+.login form input[type = text]:focus,
+.login form input[type = email]:focus{
+  outline: 1px solid var(--gold-color);
+}
+.login form input[type = submit]{
+  border-radius: 5px;
+  background-color: var(--gray-color);
+  color: #fff;
+  padding: 10px 60px;
+  border: 1px solid;
+  transition: var(--main-transition);
+}
+.login form input[type = submit]:hover{
+  background-color: var(--gold-color);
+}
+.login form > div a{
+  color: var(--gray-color);
+  font-weight: bold;
+  display: block;
+  text-align: left;
+}
+.login{
+  
+}
+/* End login */
+
+/* Start fixed style dashboard */
+.mainpage{
+
+}
+.mainpage .maincont{
+  min-height: 100vb;
+  /* min-width: 1000px; */
+}
+.mainpage .maincont > .row{
+  width: 100%;
+  margin: auto;
+}
+.mainpage .maincont > .row > div{
+  padding: 0px;
+}
+.mainpage .dashbordmenu{
+  background-color: var(--mainbg);
+  padding: 30px;
+  height: 100vb;
+  position: fixed;
+  width: inherit;
+}
+.mainpage .dashbordmenu .dashlogo{
+  text-align: center;
+  margin-bottom: 50px;
+}
+.mainpage .dashbordmenu .dashlogo img{
+  height: 120px;
+}
+.mainpage .dashbordmenu ul{
+  
+}
+.mainpage .dashbordmenu ul li{
+  padding: 10px;
+  transition: all .5s ease-in-out;
+}
+.mainpage .dashbordmenu ul li:hover{
+  background-color: var(--gold-color);
+}
+.mainpage .dashbordmenu ul a{
+  color: var(--gray-color);
+  font-weight: bold;
+  display: block;
+}
+.mainpage .dashbordmenu span{
+  margin-left: 10px;
+  font-size: 17px;
+}
+.mainpage .dashbordmenu .active{
+  background-color: var(--gold-color);
+}
+.mainpage .bodyheader{
+  background-color: var(--mainbg);
+  padding: 20px 50px;
+
+}
+.mainpage .bodyheader h5{
+  text-align: left;
+  margin-bottom: 0px;
+}
+.mainpage .bodyheader img{
+  width: 30px;
+  margin-left: 10px;
+}
+.mainpage .mainbody{
+  padding: 30px;
+}
+.mainpage .mainbody h3{
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+.mainpage .mainbody .titletable{
+  background-color: var(--gold-color);
+}
+.mainpage .mainbody .titletable > div{
+  padding: 10px 5px;
+  text-align: center;
+}
+.mainpage .mainbody h6{
+  margin-bottom: 0px;
+  font-size: 13px;
+}
+.mainpage .mainbody .bodytable > div{
+  padding: 10px 5px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mainpage .mainbody span{
+  margin-bottom: 0px;
+  font-size: 12px;
+}
+
+.mainpage .icont{
+  color: var(--gray-color);
+  font-size: 15px !important;
+  margin: 0px 10px;
+  cursor: pointer;
+}
+
+.mainpage .headingwbth{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0px 30px 0px;
+}
+.mainpage .headingwbth h3{
+  margin-bottom: 0px;
+  font-size: 24px;
+}
+.mainpage .dashaftbfimg{
+  width: 150px;
+}
+.mainpage .parules{
+  
+}
+.mainpage .parules > div{
+  margin-bottom: 20px;
+}
+.mainpage .mainbox{
+  padding: 12px;
+  border-radius: 7px;
+  box-shadow: 1px 1px 2px #ddd, -1px -1px 2px #ddd;
+}
+.mainpage .mainbox img{
+  width: 100%;
+  margin-bottom: 10px;
+}
+.mainpage .mainbox h5{
+  color: var(--gold-color);
+  font-size: 20px;
+}
+.mainpage .mainbox > span{
+  
+}
+.mainpage .mainbox p{
+  font-size: 12px;
+}
+.mainpage .mainbox .choosebtnbox{
+  text-align: center;
+}
+.mainpage .mainbox .icont{
+  margin: 0px 20px;
+  font-size: 20px !important;
+  transition: var(--main-transition);
+}
+.mainpage .mainbox .icont:hover{
+  color: var(--gold-color);
+}
+.mainpage .newsdashimg{
+  width: 70px;
+  margin: 0px 5px;
+}
+
+.mainpage .aboutdash{
+  width: 80%;
+  margin: auto;
+  padding: 30px;
+  border-radius: 7px;
+  margin-bottom: 50px;
+  box-shadow: 1px 1px 2px #ddd, -1px -1px 2px #ddd;
+}
+.mainpage .aboutdash form{
+  
+}
+.mainpage .aboutdash form > div{
+  margin-bottom: 20px;
+}
+.mainpage .aboutdash form > div:last-of-type{
+  text-align: left;
+}
+.mainpage .aboutdash h4{
+  color: var(--gray-color);
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+.mainpage .aboutdash textarea{
+  width: 100%;
+  padding: 7px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  font-size: 14px;
+  box-shadow: 1px 1px 2px #ddd, -1px -1px 2px #ddd;
+}
+.mainpage .aboutdash textarea::placeholder{
+  
+}
+.mainpage .aboutdash textarea:focus{
+  outline: 1px solid var(--gold-color);
+}
+.mainpage .aboutdash input[type = submit]{
+  border-radius: 5px;
+  background-color: var(--gray-color);
+  color: #fff;
+  padding: 10px 60px;
+  border: 1px solid;
+  transition: var(--main-transition);
+}
+.mainpage .aboutdash input[type = submit]:hover{
+  background-color: var(--gold-color);
+}
+
+
+.mainpage .general-social{
+  width: 80%;
+  margin: auto;
+  padding: 30px;
+  border-radius: 7px;
+  margin-bottom: 50px;
+  box-shadow: 1px 1px 2px #ddd, -1px -1px 2px #ddd;
+}
+.mainpage .general-social h4{
+  color: var(--gray-color);
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+.mainpage .general-social form{
+  
+}
+.mainpage .general-social form > div{
+  position: relative;
+  margin-bottom: 20px;
+}
+.mainpage .general-social form > div:last-of-type{
+  text-align: left;
+}
+.mainpage .general-social form span{
+  color: var(--gray-color);
+  position: absolute;
+  left: 15px;
+  font-size: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.mainpage .general-social input[type = text],
+.mainpage .general-social input[type = password]{
+  width: 100%;
+  padding: 7px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  font-size: 14px;
+  box-shadow: 1px 1px 2px #ddd, -1px -1px 2px #ddd;
+}
+.mainpage .general-social input[type = text]::placeholder,
+.mainpage .general-social input[type = password]::placeholder{
+  
+}
+.mainpage .general-social input[type = text]:focus,
+.mainpage .general-social input[type = password]:focus{
+  outline: 1px solid var(--gold-color);
+}
+.mainpage .general-social input[type = submit]{
+  border-radius: 5px;
+  background-color: var(--gray-color);
+  color: #fff;
+  padding: 10px 60px;
+  border: 1px solid;
+  transition: var(--main-transition);
+}
+.mainpage .general-social input[type = submit]:hover{
+  background-color: var(--gold-color);
+}
+/* End fixed style dashboard */
+
+/* Start Modal */
+.modal{
+
+}
+.modal-header{
+  padding: 10px 15px;
+}
+.modal form{
+  padding: 0px 30px;
+}
+.modal form > div{
+  margin-bottom: 10px;
+}
+.modal-header .btn-close{
+  margin-right: auto;
+  margin-left: 0px;
+}
+.modal .custom-inpfile {
+  background-color: #dddddd;
+  position: relative;
+  border: 1px solid var(--gray-color);
+  z-index: 1;
+  width: 350px;
+  height: 120px;
+  margin: auto;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+.modal .custom-inpfile .repl-inpfile {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 10px;
+  color: #8B8B8B;
+  cursor: pointer;
+}
+.modal .custom-inpfile .repl-inpfile h5{
+  color: var(--gray-color);
+  margin: 3px 0;
+}
+.modal .custom-inpfile .repl-inpfile span{
+  font-size: 50px;
+  color: var(--gray-color);
+}
+.modal .custom-inpfile input[type=file] {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 3;
+  cursor: pointer;
+}
+.modal label{
+  font-size: 14px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: var(--gray-color);
+}
+.modal form input[type = text],
+.modal form input[type = datetime-local],
+.modal form select,
+.modal form textarea{
+  width: 100%;
+  padding: 7px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  background-color: rgba(217, 217, 217, 0.15);
+}
+.modal form textarea{
+  height: 140px;
+}
+.modal form input[type = text]::placeholder,
+.modal form input[type = datetime-local]::placeholder,
+.modal form textarea::placeholder{
+  font-size: 15px;
+  text-align: right;
+}
+.modal form input[type = text]:focus,
+.modal form input[type = datetime-local]:focus,
+.modal form textarea:focus{
+  outline: 1px solid var(--gold-color);
+}
+.modal .maindashbtn {
+  border-radius: 5px;
+  background-color: var(--gray-color);
+  color: #fff;
+  padding: 8px 40px;
+  border: 1px solid;
+  font-size: 14px;
+  transition: var(--main-transition);
+}
+.modal .maindashbtn:hover{
+  background-color: var(--gold-color);
+}
+
+@media (max-width: 576px){
+  .login .upform{
+    width: 100%;
+  }
+  .mainpage .maincont{
+    min-width: 1000px;
+  }
+  .mainpage .maincont > .row{
+    width: 100%;
+  }
+  .modal .custom-inpfile{
+    width: 100%;
+  }
+}
+@media (min-width: 577px) and (max-width: 769px){
+  .login .upform{
+    width: 100%;
+  }
+  .mainpage .maincont{
+    min-width: 1200px;
+  }
+  .mainpage .maincont > .row{
+    width: 100%;
+  }
+  .mainpage {
+    overflow-x: scroll;
+  }
+  body{
+    overflow-x: scroll;
+  }
+}
+@media (min-width: 770px) and (max-width: 992px){
+  .login .upform{
+    width: 100%;
+  }
+  .mainpage .maincont{
+    min-width: 1200px;
+  }
+  .mainpage .maincont > .row{
+    width: 100%;
+  }
+  .mainpage {
+    overflow-x: scroll;
+  }
+  body{
+    overflow-x: scroll;
+  }
+}
+@media (min-width: 993px) and (max-width: 1199px){
+
+}
+/* End Modal */
+
+
+/*@media (max-width: 576px)
+@media (min-width: 577px) and (max-width: 769px)
+@media (min-width: 770px) and (max-width: 992px)
+@media (min-width: 993px) and (max-width: 1199px)*/
